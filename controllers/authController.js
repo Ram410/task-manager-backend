@@ -31,16 +31,18 @@ export const login = async (req, res) => {
       return res.status(400).json({ message: "User not found" });
     }
 
-    // 2. Compare password
+    
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) {
       return res.status(400).json({ message: "Wrong password" });
     }
 
-    // 3. Create token ✅ FIXED
+    
     const token = jwt.sign(
-      { id: user._id },                // payload
-      process.env.JWT_SECRET,          // secret
+      { id: user._id,
+        email: user.email
+      },                
+      process.env.JWT_SECRET,         
       { expiresIn: "1d" }
     );
 
