@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2 id="authTitle">Login</h2>
+
+  <div id="loginFields">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login(event)">Login</button>
+  </div>
+
+  <div id="signupFields" style="display: none;">
+    <input type="text" id="name" placeholder="Name">
+    <input type="email" id="signupEmail" placeholder="Email">
+    <input type="password" id="signupPassword" placeholder="Password">
+    <button onclick="signup(event)">Sign Up</button>
+  </div>
+
+  <p id="msg"></p>
+  <p id="toggleText">Don't have an account? <a href="#" onclick="showSignup(event)">Sign up</a></p>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
