@@ -1,4 +1,4 @@
-# Taskify - A Team Collaboration Tool 
+# Task Management App
 
 ## Full Stack Project using MERN
 
@@ -16,7 +16,10 @@ In a dynamic work environment, effective task management is crucial for team suc
 With the rise of remote work and dispersed teams, there is a growing need for tools that facilitate effective communication and task coordination. The Cloud-Based Task Manager addresses this need by leveraging modern web technologies to create an intuitive and responsive task management solution. The MERN stack ensures scalability, while the integration of Redux Toolkit, Headless UI, and Tailwind CSS enhances user experience and performance.
 
 
-### 
+### TO LOGIN AS ADMIN:
+     Email: admin@test.com
+     Password: 12345678
+
 ## **Admin Features:**
 1. **User Management:**
     - Create admin accounts.
@@ -50,8 +53,9 @@ With the rise of remote work and dispersed teams, there is a growing need for to
 
 ## **General Features:**
 1. **Authentication and Authorization:**
-    - User login with secure authentication.
-    - Role-based access control.
+    - User login/sign-up with secure authentication.
+    - Role-based access control(admin/member).
+    - Admin can control access(admin/member)
 
 2. **Profile Management:**
     - Update user profiles.
@@ -60,7 +64,9 @@ With the rise of remote work and dispersed teams, there is a growing need for to
     - Change passwords securely.
 
 4. **Dashboard:**
-    - Provide a summary of user activities.
+    - Provide a summary of projects and task assigned under that project.
+    - Admin can Add and delete projects
+    - Admin can add task,due date,Done,Undo.
     - Filter tasks into todo, in progress, or completed.
 
 
