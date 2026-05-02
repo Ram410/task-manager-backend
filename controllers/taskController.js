@@ -6,7 +6,8 @@ export const createTask = async (req, res) => {
     const task = await Task.create({
       title: req.body.title,
       projectId: req.body.projectId,
-      completed: false
+      completed: false,
+      dueDate: req.body.dueDate ? new Date(req.body.dueDate) : null
     });
 
     res.json(task);

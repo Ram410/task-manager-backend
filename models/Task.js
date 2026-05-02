@@ -6,7 +6,11 @@ const taskSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Project"
   },
-  completed: Boolean
+  completed: {
+    type: Boolean,
+    default: false
+  },
+  dueDate: Date
 });
 
 export default mongoose.model("Task", taskSchema);
